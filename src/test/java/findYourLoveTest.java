@@ -48,7 +48,7 @@ public class findYourLoveTest {
 		}
 	}
   
-/*
+
   @org.junit.Test
   public void test() {
     hoho.matchscore = 0;
@@ -68,7 +68,7 @@ public class findYourLoveTest {
     assertEquals(2, hoho.bigOrSmall(1, 2));
 
   }
-
+  /*
   @Test
   public void Showtopic_test() throws IOException {
     String temp = "";
