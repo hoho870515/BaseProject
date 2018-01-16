@@ -15,7 +15,6 @@ public class Main {
     int habbit;
     int p1;
     int p2;
-    String[] pla = { "°·¨­©Ð" ,"¥x¤¤°Ó°é" ,"¹Ï®ÑÀ]" ,"¹q°Ê³õ" ,"­¹«~DIY¤u¼t" ,"ºt°Û·|" ,"¬ü³NÀ]" ,"¼g§@Ãþ" ,"®È¹C"};
     File chat = new File("chat.txt");
     FileReader fr = new FileReader(chat);
     FileWriter fw = new FileWriter(chat, true);
@@ -35,28 +34,28 @@ public class Main {
     people yu = new people(19, 1, 2, 1, 2, 10, 1, 2, 3, d);
     people[] database = { hung, ling, xiao, yu };
 
-    System.out.println("©Ê§O 1¨k 2¤k\n ");
+    System.out.println("æ€§åˆ¥ 1ç”· 2å¥³\n ");
     client.sexType = scanner.nextInt();
-    System.out.println("³ßÅwªº©Ê§O 1¨k 2¤k\n ");
+    System.out.println("å–œæ­¡çš„æ€§åˆ¥ 1ç”· 2å¥³\n ");
     client.preferSex = scanner.nextInt();
-    System.out.println("¿³½ì:1 ¹B°Ê 2 ³}µó 3 ¾\Åª 4 ¹qª± 5 ²i¶¹ 6 ­µ¼Ö 7 Ã¸µe 8 ¼g§@ 9 ®È¹C(³Ì¦h¿é¤J4­Ó)\n ");
+    System.out.println("èˆˆè¶£:1 é‹å‹• 2 é€›è¡— 3 é–±è®€ 4 é›»çŽ© 5 çƒ¹é£ª 6 éŸ³æ¨‚ 7 ç¹ªç•« 8 å¯«ä½œ 9 æ—…éŠ(æœ€å¤šè¼¸å…¥4å€‹)\n ");
     hobby[0] = scanner.nextInt();
     hobby[1] = scanner.nextInt();
     hobby[2] = scanner.nextInt();
     hobby[3] = scanner.nextInt();
-    System.out.println("¦~ÄÖ\n ");
+    System.out.println("å¹´é½¡\n ");
     client.salary = scanner.nextInt();
-    System.out.println("¦~Á~ :1 0-22000 2 22000-50000 3 50000-100000 4 100000UP\n ");
+    System.out.println("å¹´è–ª :1 0-22000 2 22000-50000 3 50000-100000 4 100000UP\n ");
     client.age = scanner.nextInt();
-    System.out.println("¦å«¬ :1A 2B 3O 4AB \n ");
+    System.out.println("è¡€åž‹ :1A 2B 3O 4AB \n ");
     client.bloodType = scanner.nextInt();
-    System.out.println("¬P®y:1¥Õ¦Ï®y 2ª÷¤û®y 3Âù¤l®y 4¥¨ÃÉ®y 5·à¤l®y 6³B¤k®y 7¤Ñ¯¯®y 8¤ÑÃÈ®y 9®g¤â®y 10Å]½~®y 11¤ô²~®y 12Âù³½®y\n ");
+    System.out.println("æ˜Ÿåº§:1ç™½ç¾Šåº§ 2é‡‘ç‰›åº§ 3é›™å­åº§ 4å·¨èŸ¹åº§ 5ç…å­åº§ 6è™•å¥³åº§ 7å¤©ç§¤åº§ 8å¤©è åº§ 9å°„æ‰‹åº§ 10é­”ç¾¯åº§ 11æ°´ç“¶åº§ 12é›™é­šåº§\n ");
     client.sign = scanner.nextInt();
-    System.out.println("Â¾·~:1 ¾Ç¥Í 2 ­x¤½±Ð 3 ¤W¯Z±Ú 4 ¤K¤j 5 ®a®x¥D°ü 6 ¦Û¥Ñ·~ \n ");
+    System.out.println("è·æ¥­:1 å­¸ç”Ÿ 2 è»å…¬æ•™ 3 ä¸Šç­æ— 4 å…«å¤§ 5 å®¶åº­ä¸»å©¦ 6 è‡ªç”±æ¥­ \n ");
     client.job = scanner.nextInt();
-    System.out.println("¥Í¨v:1¹« 2¤û 3ªê 4¨ß 5Às 6³D 7°¨ 8¦Ï 9µU 10Âû 11ª¯ 12½Þ \n ");
+    System.out.println("ç”Ÿè‚–:1é¼  2ç‰› 3è™Ž 4å…” 5é¾ 6è›‡ 7é¦¬ 8ç¾Š 9çŒ´ 10é›ž 11ç‹— 12è±¬ \n ");
     client.chineseSign = scanner.nextInt();
-    System.out.println("®a¶m:1¥_  2¤¤   3«n   4ªF   5Â÷®q\n ");
+    System.out.println("å®¶é„‰:1åŒ—  2ä¸­   3å—   4æ±   5é›¢å³¶\n ");
     client.home = scanner.nextInt();
 
     i = client.findYourLove(client.checkScore(hung), client.checkScore(ling), client.checkScore(xiao),
@@ -70,10 +69,10 @@ public class Main {
         System.out.println(br.readLine());
       }
       br.close();
-      System.out.println("¿ï¾Ü±ý¨Ï¥Îªº¸ÜÃD:");
+      System.out.println("é¸æ“‡æ¬²ä½¿ç”¨çš„è©±é¡Œ:");
       Showtopic.show(habbit);
       Showtopic.cleartemp();
-      System.out.println("(¦Û¦æ¿é¤J½Ð¿ï0,Â÷¶}½Ð¿ï9)");
+      System.out.println("(è‡ªè¡Œè¼¸å…¥è«‹é¸0,é›¢é–‹è«‹é¸9)");
       BufferedReader habr = new BufferedReader(habbits.Returnhar(habbit));
       choose = scanner.nextInt();
       if (choose > 0 && choose <= 3)
@@ -89,8 +88,8 @@ public class Main {
     fw.write("");
     fw.close();
     fr.close();
-    System.out.println("µ²§ô²á¤Ñ");
-	System.out.println("¬ù·|¦aÂI:1.°·¨­©Ð 2.¥x¤¤°Ó°é 3.¹Ï®ÑÀ] 4.¹q°Ê³õ 5.­¹«~DIY¤u¼t 6.ºt°Û·| 7.¬ü³NÀ] 8.¼g§@Ãþ 9.®È¹C");
+    System.out.println("çµæŸèŠå¤©");
+	System.out.println("ç´„æœƒåœ°é»ž:1.å¥èº«æˆ¿ 2.å°ä¸­å•†åœˆ 3.åœ–æ›¸é¤¨ 4.é›»å‹•å ´ 5.é£Ÿå“DIYå·¥å»  6.æ¼”å”±æœƒ 7.ç¾Žè¡“é¤¨ 8.å¯«ä½œé¡ž 9.æ—…éŠ");
 	p1 = scanner.nextInt();
 	place.chooseplace1(p1);
 	p2 = scanner.nextInt();

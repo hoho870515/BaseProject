@@ -3,35 +3,35 @@ package findYourLove;
 public class place {
 
 	public static String chooseplace1(int place) {
-		String[] pla = { "°·¨­©Ğ" ,"¥x¤¤°Ó°é" ,"¹Ï®ÑÀ]" ,"¹q°Ê³õ" ,"­¹«~DIY¤u¼t" ,"ºt°Û·|" ,"¬ü³NÀ]" ,"¼g§@Ãş" ,"®È¹C"};
+		String[] pla = { "å¥èº«æˆ¿" ,"å°ä¸­å•†åœˆ" ,"åœ–æ›¸é¤¨" ,"é›»å‹•å ´" ,"é£Ÿå“DIYå·¥å» " ,"æ¼”å”±æœƒ" ,"ç¾è¡“é¤¨" ,"å¯«ä½œé¡" ,"æ—…éŠ"};
 		System.out.println(pla[place-1]);
 		switch(place) {
 		case 1:
-			System.out.println("1.World Gym 2.°·¨­¤u¼t");
+			System.out.println("1.World Gym 2.å¥èº«å·¥å» ");
 			break;
 		case 2:
-			System.out.println("1.³{¥Ò©]¥« 2.¤@¤¤°é");
+			System.out.println("1.é€¢ç”²å¤œå¸‚ 2.ä¸€ä¸­åœˆ");
 			break;
 		case 3:
-			System.out.println("1.°ê¥ß¤½¦@¸ê°T¹Ï®ÑÀ] 2.¥x¤¤¥«¥ß¹Ï®ÑÀ]");
+			System.out.println("1.åœ‹ç«‹å…¬å…±è³‡è¨Šåœ–æ›¸é¤¨ 2.å°ä¸­å¸‚ç«‹åœ–æ›¸é¤¨");
 			break;
 		case 4:
-			System.out.println("1.´ö©iºµ 2.¤j¾|»Õ¿Ë¤l¹C¼Ö³õ");
+			System.out.println("1.æ¹¯å§†ç†Š 2.å¤§é­¯é–£è¦ªå­éŠæ¨‚å ´");
 			break;
 		case 5:
-			System.out.println("1.¯M°öDIY 2.¹Ï¹ÏªGÁ÷²N²O");
+			System.out.println("1.çƒ˜åŸ¹DIY 2.åœ–åœ–æœéœœæ·‡æ·‹");
 			break;
 		case 6:
-			System.out.println("1.¤­¤ë¤Ñ 2.©PªN­Û");
+			System.out.println("1.äº”æœˆå¤© 2.å‘¨æ°å€«");
 			break;
 		case 7:
-			System.out.println("1.°ê¥ß¥xÆW¬ü³NÀ] 2.Åb°aÃÀ³N");
+			System.out.println("1.åœ‹ç«‹å°ç£ç¾è¡“é¤¨ 2.é¶´è»’è—è¡“");
 			break;
 		case 8:
-			System.out.println("1.¤T¤ò¬G©~ 2.°ê¥ß¥xÆW¬ü³NÀ]");
+			System.out.println("1.ä¸‰æ¯›æ•…å±… 2.åœ‹ç«‹å°ç£ç¾è¡“é¤¨");
 			break;
 		case 9:
-			System.out.println("1.¤é¤ë¼æ 2.ÄRÄ_¼Ö¶é");
+			System.out.println("1.æ—¥æœˆæ½­ 2.éº—å¯¶æ¨‚åœ’");
 			break;
 		}
 		return pla[place-1];
@@ -44,48 +44,48 @@ public class place {
 		switch(place) {
 		case 1:
 			if(place2 == 1) temp = "World Gym";
-			else if(place2 == 2)temp = "°·¨­¤u¼t";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			else if(place2 == 2)temp = "å¥èº«å·¥å» ";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 2:
-			if(place2 == 1)temp = "³{¥Ò©]¥«";
-			else if(place2 == 2)temp = "¤@¤¤°é";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "é€¢ç”²å¤œå¸‚";
+			else if(place2 == 2)temp = "ä¸€ä¸­åœˆ";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 3:
-			if(place2 == 1)temp = "°ê¥ß¤½¦@¸ê°T¹Ï®ÑÀ]";
-			else if(place2 == 2)temp = "¥x¤¤¥«¥ß¹Ï®ÑÀ]";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "åœ‹ç«‹å…¬å…±è³‡è¨Šåœ–æ›¸é¤¨";
+			else if(place2 == 2)temp = "å°ä¸­å¸‚ç«‹åœ–æ›¸é¤¨";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 4:
-			if(place2 == 1)temp = "´ö©iºµ";
-			else if(place2 == 2)temp = "¤j¾|»Õ¿Ë¤l¹C¼Ö³õ";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "æ¹¯å§†ç†Š";
+			else if(place2 == 2)temp = "å¤§é­¯é–£è¦ªå­éŠæ¨‚å ´";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 5:
-			if(place2 == 1)temp = "¯M°öDIY";
-			else if(place2 == 2)temp = "¹Ï¹ÏªGÁ÷²N²O";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "çƒ˜åŸ¹DIY";
+			else if(place2 == 2)temp = "åœ–åœ–æœéœœæ·‡æ·‹";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 6:
-			if(place2 == 1)temp = "¤­¤ë¤Ñ";
-			else if(place2 == 2)temp = "©PªN­Û";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "äº”æœˆå¤©";
+			else if(place2 == 2)temp = "å‘¨æ°å€«";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 7:
-			if(place2 == 1)temp = "°ê¥ß¥xÆW¬ü³NÀ]";
-			else if(place2 == 2)temp = "Åb°aÃÀ³N";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "åœ‹ç«‹å°ç£ç¾è¡“é¤¨";
+			else if(place2 == 2)temp = "é¶´è»’è—è¡“";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 8:
-			if(place2 == 1)temp = "¤T¤ò¬G©~";
-			else if(place2 == 2)temp = "°ê¥ß¥xÆW¬ü³NÀ]";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "ä¸‰æ¯›æ•…å±…";
+			else if(place2 == 2)temp = "åœ‹ç«‹å°ç£ç¾è¡“é¤¨";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		case 9:
-			if(place2 == 1)temp = "¤é¤ë¼æ";
-			else if(place2 == 2)temp = "ÄRÄ_¼Ö¶é";
-			else temp = "¿ï¶µ¤£¦s¦b";
+			if(place2 == 1)temp = "æ—¥æœˆæ½­";
+			else if(place2 == 2)temp = "éº—å¯¶æ¨‚åœ’";
+			else temp = "é¸é …ä¸å­˜åœ¨";
 			break;
 		}
 		System.out.println(temp);

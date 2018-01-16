@@ -16,7 +16,7 @@ public class Chat {
     int count = 1;
     String readLine;
     if (choose > 3)
-      System.out.println("¿ï¶µ¤£¦s¦b");
+      System.out.println("é¸é …ä¸å­˜åœ¨");
     while (true) {
       readLine = habr.readLine();
       if (count < choose) {
@@ -36,7 +36,7 @@ public class Chat {
 
   public static void chat_by_yourself(String temp) throws IOException {
     FileWriter fw = new FileWriter(chat, true);
-    System.out.println("(¿é¤J²á¤Ñ¤º®e¡A©Î¿é¤JexitÂ÷¶})");
+    System.out.println("(è¼¸å…¥èŠå¤©å…§å®¹ï¼Œæˆ–è¼¸å…¥exité›¢é–‹)");
     if (!temp.equalsIgnoreCase("exit")) {
       tmp = tmp + temp + "\n";
       fw.write(temp + "\r\n");
