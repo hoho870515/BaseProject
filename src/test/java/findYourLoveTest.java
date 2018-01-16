@@ -39,7 +39,16 @@ public class findYourLoveTest {
   // public void tearDown() throws Exception {
   //
   // }
-
+  
+  @Test
+	public void place_test() {
+		String[] pla = { "健身房" ,"台中商圈" ,"圖書館" ,"電動場" ,"食品DIY工廠" ,"演唱會" ,"美術館" ,"寫作類" ,"旅遊"};
+	    for(int i=1;i<10;i++) {
+	    	assertEquals(pla[i-1],place.chooseplace1(i));
+		}
+	}
+  
+/*
   @org.junit.Test
   public void test() {
     hoho.matchscore = 0;
@@ -117,13 +126,7 @@ public class findYourLoveTest {
     }
   }
   
-	@Test
-	public void place_test() {
-		String[] pla = { "健身房" ,"台中商圈" ,"圖書館" ,"電動場" ,"食品DIY工廠" ,"演唱會" ,"美術館" ,"寫作類" ,"旅遊"};
-	    for(int i=1;i<10;i++) {
-	    	assertEquals(pla[i-1],place.chooseplace1(i));
-		}
-	}
+	
 	
 	@Test
 	public void place2_test() {
@@ -157,4 +160,5 @@ public class findYourLoveTest {
 	    	}
 		}
 	}
+	*/
 }
