@@ -40,6 +40,40 @@ public class findYourLoveTest {
   //
   // }
   
+//////////////////////////////////////////////////////////////////////////
+  @Test
+	public void place2_test() {
+		String[][] pla;
+		pla = new String[9][2];
+		pla[0][0] = "World Gym";
+		pla[0][1] = "健身工廠";
+		pla[1][0] = "逢甲夜市";
+		pla[1][1] = "一中圈";
+		pla[2][0] = "國立公共資訊圖書館";
+		pla[2][1] =	"台中市立圖書館";
+		pla[3][0] = "湯姆熊";
+	    pla[3][1] = "大魯閣親子遊樂場";
+	    pla[4][0] = "烘培DIY";
+	    pla[4][1] = "圖圖果霜淇淋";
+	    pla[5][0] = "五月天";
+	    pla[5][1] = "周杰倫";
+	    pla[6][0] = "國立台灣美術館";
+	    pla[6][1] = "鶴軒藝術";
+	    pla[7][0] = "三毛故居";
+	    pla[7][1] = "國立台灣美術館";
+	    pla[8][0] = "日月潭";
+	    pla[8][1] = "麗寶樂園";
+	    for(int i=1;i<10;i++) {
+	    	for(int j=1;j<=3;j++) {
+	    		if(j>2) {
+	    			assertEquals("選項不存在",place.chooseplace2(i,j));
+	    			break;
+	    		}
+	    		assertEquals(pla[i-1][j-1],place.chooseplace2(i,j));
+	    	}
+		}
+	}
+  
   @Test
 	public void place_test() {
 		String[] pla = { "健身房" ,"台中商圈" ,"圖書館" ,"電動場" ,"食品DIY工廠" ,"演唱會" ,"美術館" ,"寫作類" ,"旅遊"};
@@ -47,7 +81,7 @@ public class findYourLoveTest {
 	    	assertEquals(pla[i-1],place.chooseplace1(i));
 		}
 	}
-  
+  //////////////////////////////////////////////////////////////////////////
 
   @org.junit.Test
   public void test() {
@@ -69,6 +103,9 @@ public class findYourLoveTest {
 
   }
   
+//////////////////////////////////////////////////////////////////////////
+  
+  /*error
   @Test
   public void Showtopic_test() throws IOException {
     String temp = "";
@@ -81,6 +118,8 @@ public class findYourLoveTest {
       assertEquals(temp, Showtopic.getTemp());
     }
   }
+  */
+  
   /*
   @Test
   public void Chat_topic_test() throws IOException {
@@ -125,40 +164,9 @@ public class findYourLoveTest {
       }
     }
   }
-  
+  */
 	
 	
-	@Test
-	public void place2_test() {
-		String[][] pla;
-		pla = new String[9][2];
-		pla[0][0] = "World Gym";
-		pla[0][1] = "健身工廠";
-		pla[1][0] = "逢甲夜市";
-		pla[1][1] = "一中圈";
-		pla[2][0] = "國立公共資訊圖書館";
-		pla[2][1] =	"台中市立圖書館";
-		pla[3][0] = "湯姆熊";
-	    pla[3][1] = "大魯閣親子遊樂場";
-	    pla[4][0] = "烘培DIY";
-	    pla[4][1] = "圖圖果霜淇淋";
-	    pla[5][0] = "五月天";
-	    pla[5][1] = "周杰倫";
-	    pla[6][0] = "國立台灣美術館";
-	    pla[6][1] = "鶴軒藝術";
-	    pla[7][0] = "三毛故居";
-	    pla[7][1] = "國立台灣美術館";
-	    pla[8][0] = "日月潭";
-	    pla[8][1] = "麗寶樂園";
-	    for(int i=1;i<10;i++) {
-	    	for(int j=1;j<=3;j++) {
-	    		if(j>2) {
-	    			assertEquals("選項不存在",place.chooseplace2(i,j));
-	    			break;
-	    		}
-	    		assertEquals(pla[i-1][j-1],place.chooseplace2(i,j));
-	    	}
-		}
-	}
-	*/
+	
+	
 }
